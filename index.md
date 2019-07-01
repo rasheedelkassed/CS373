@@ -13,9 +13,8 @@ Malware can be created for many different reasons. Some people enjoy seeing the 
 
 ### The Tools for the Job!
 This week gave us a homework assignment to analyze a piece of malware. To do this, we were given access to a VM with several tools and the malware already pre-installed. The tools that we used were were:
-* Flypaper: a program that stopped TCP/IP requests and also, I believe, stopped processes from exiting.
-
-* Fakenet: a program that simulates network traffic, sort of.
-* Process Monitor: a program that allows you to look at every action every process is currently doing.
-* Process Explorer: a program that lets you look at the details behind every running process.
-* Antispy: a program that also lets you look at the details behind every process but with differing information.
+* Flypaper: a program that stopped TCP/IP requests and also, I believe, stopped processes from exiting. ![Flypaper](/images/Flypaper.PNG)
+* Fakenet: a program that simulates network traffic, sort of. ![FakeNet](/images/FakeNet.PNG)
+* Process Monitor: a program that allows you to look at every action every process is currently doing. ![ProcMonitor](/images/ProcMonitor.PNG)
+* Process Explorer: a program that lets you look at the details behind every running process.![ProcExplorer](/images/ProcExplorer.PNG)
+* Antispy: a program that also lets you look at the details behind every process but with differing information.![AntiSpy](/images/AntiSpy.PNG)
