@@ -1,8 +1,7 @@
 # CS373 Summer Write-Up Blog
 
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth through the term.
-<div>
-  
+
 ## Week 1 Write-Up: The Basics of Malware
 This first week of class was choked full of information and as such was the typical first week experience for pretty much any class. We learned a whole lot of new terminology that was foriegn to many of us, we were introduced to an online Virtual Machine (VM) extravaganza, and were introduced to many new tools and techniques that I had personally never heard of. We also learned about what malware actually is, and why it exists and is created.
 
@@ -28,10 +27,12 @@ This week brought forth a slew of new vocabulary to in terms of categorizing fil
 * Hash: a value calculated based on the contents of a file.
 
 ### The Tools for the Job!
-This week gave us a homework assignment to analyze a piece of malware. To do this, we were given access to a VM with several tools and the malware already pre-installed. The tools that we used were were:
+To properly analyze malware, we were given access to a VM with several tools pre-installed. The tools that we learned about and used this week were:
 * Flypaper: a program that stopped TCP/IP requests and also, I believe, stopped processes from exiting. ![Flypaper](/images/Flypaper.PNG)
 * Fakenet: a program that simulates network traffic, sort of.![FakeNet](/images/FakeNet.PNG)
 * Process Monitor: a program that allows you to look at every action every process is currently doing. ![ProcMonitor](/images/ProcMonitor.PNG)
 * Process Explorer: a program that lets you look at the details behind every running process.![ProcExplorer](/images/ProcExplorer.PNG)
 * Antispy: a program that also lets you look at the details behind every process but with differing information.![AntiSpy](/images/AntiSpy.PNG)
-</div>
+
+### The First Lab
+This week gave us insight into how the rest of the course is going to go, at least in terms of homework. For this assignment we were given some malware that we were to dynamically analyze and report about our findings. We first started off by renaming the program to evil.exe, always a good start to any assignment. Then we ran all our fancy tool I mentioned earlier followed by running evil itself. I had a hard time actually figuring out the goal behind the sample as there was little to go off of. I did find after doing my best that some of the files it creates might be giving access to our system to someone else.
