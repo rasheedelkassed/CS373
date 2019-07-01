@@ -37,6 +37,6 @@ To properly analyze malware, we were given access to a VM with several tools pre
 ### The First Lab
 This week gave us insight into how the rest of the course is going to go, at least in terms of homework. For this assignment we were given some malware that we were to dynamically analyze and report about our findings. We first started off by renaming the program to evil.exe, always a good start to any assignment. Then we ran all our fancy tool I mentioned earlier followed by running evil itself. I had a hard time actually figuring out the goal behind the sample as there was little to go off of. I did find out after doing my best with the tools that some of the files the sample creates might be giving access to our system to someone else.
  
- ### Citations
- Most of the information is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
+### Citations
+Much of the information on this blog post is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
 
