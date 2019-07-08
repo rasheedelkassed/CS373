@@ -20,7 +20,8 @@ Forensic Computing is the thorough gathering of digital data in order to identif
 * Evidence Acquisition
 * Investigation and analysis
 * Reporting results
-Forensic computing can be roughly categorized into three overarching  classes:
+
+Forensic computing can be roughly categorized into three overarching classes:
 * Live forensics
 * Post-mortem based forensics
 * Network based forensics
