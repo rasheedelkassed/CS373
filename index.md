@@ -38,13 +38,13 @@ The short answer: very carefully. Precautions must be put in place in order to s
 
 ### What is the Incident Response Process?
 The incident response process is a seven step process by which action should be taken if or when an  incident is detected. The seven steps are as follows:
-* Incident response team preparation
-* Incident detection
-* Initial response
-* Formulate response strategy
-* Data collection
-* Forensic Analysis
-* Document findings
+* Incident response team preparation: The team must be prepared for a incident at any time.
+* Incident detection: The actual detection of the incident.
+* Initial response: The team's immediate response to the incident.
+* Formulate response strategy: The team creates a strategy to tackle or otherwise handle the incident.
+* Data collection: Data regarding the incident gets collected.
+* Forensic Analysis: The data collected during the data collection stage gets analyzed.
+* Document findings: Document everything from beginning to end that happened regarding the incident.
 
 ### Where Do We Look For Evidence?
 When we are looking for evidence, what we want to acquire depends on the scenario. There are three main categories of information to acquire:
