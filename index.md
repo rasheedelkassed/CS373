@@ -57,9 +57,12 @@ As long as it is safe to do so, you should refrain from simply pulling the plug 
 
 ### The Tools For Information Gathering!
 In order to collect data, we were given access to several new applications that we get to try out. The applications include:
-* FTK Imager: A tool that helps with evidence acquistion
-* Volatility: A memory forensics framework with a whole host of useful commands
-* Yara: A tool that helps with the classification of malware samples
+* FTK Imager: A tool that helps with evidence acquistion. ![FTKImager](/images/FTKImager.PNG)
+* Volatility: A memory forensics framework with a whole host of useful commands. ![Volatility](/images/Volatility.PNG)
+* Yara: Malware plugins for Volatility. I'll add an image of the editor even though I have no idea what it does. ![YaraEditor](/images/YaraEditor.PNG)
+
+### Anything Else?
+I'm still working through several of the follow alongs, it's been a busy week. I'll hopefully have better information to add next week!
 
 ## Week 1 Write-Up: The Basics of Malware
 This first week of class was choked full of information and as such was the typical first week experience for pretty much any class. We learned a whole lot of new terminology that was foriegn to many of us, we were introduced to an online Virtual Machine (VM) extravaganza, and were introduced to many new tools and techniques that I had personally never heard of. We also learned about what malware actually is, and why it exists and is created.
