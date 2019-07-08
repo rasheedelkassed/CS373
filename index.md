@@ -64,6 +64,11 @@ In order to collect data, we were given access to several new applications that 
 ### Anything Else?
 I'm still working through several of the follow alongs, it's been a busy week. I'll hopefully have better information to add next week!
 
+### Citations
+Much of the information on this blog post is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 1 Write-Up: The Basics of Malware
 This first week of class was choked full of information and as such was the typical first week experience for pretty much any class. We learned a whole lot of new terminology that was foriegn to many of us, we were introduced to an online Virtual Machine (VM) extravaganza, and were introduced to many new tools and techniques that I had personally never heard of. We also learned about what malware actually is, and why it exists and is created.
  
