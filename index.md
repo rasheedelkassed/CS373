@@ -1,7 +1,66 @@
 # CS373 Summer Write-Up Blog
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
- 
+
+## Week 2 Write-Up: Advanced Forensic Methods and Tools
+This second week, like last week, was also full of fresh new information that I had never heard about. For the most part, the tools we were introduced to were just as foregin as the ones from last week. To put this weeks lessons simply, we learned about properly reacting to incidents using the correct forensics methods. Similar to last week, the new tools we were introduced to was used to practice the forensics methods.
+
+### What is an Incident?
+An incident is something that, if I understood correctly prompts a forensic investigation. These incidents come in several different types as follows:
+* Fraud
+* Intellectual Property Theft
+* Hack Intrusions
+* Data Breaches
+* Inappropriate use of an internet connection
+* Child Exploitation
+* eDiscovery
+
+### What is Forensic Computing?
+Forensic Computing is the thorough gathering of digital data in order to identify information about a given incident. Forensics computing tends to follow the three step pattern of:
+* Evidence Acquistion
+* Investigation and analysis
+* Reporting results
+Forensic computing can be roughly categorized into three overarching  classes:
+* Live forensics
+* Post-mortem based forensics
+* Network based forensics
+The indentification, preservation, analysis, and presentation of evidence is the driving force of forensic computing
+
+### What Exactly is Evidence?
+Evidence is information that is used to determine whether or not a narrative is true. When evidence is to be used within the court of law, the evidence must be admissible. This means that the evidence is accepted by the court.
+
+### How Should Evidence be Handled?
+The short answer: very carefully. Precautions must be put in place in order to safegaurd the wholeness of evidence. There are several steps that must be carried out in order to ensure the evidence's completeness such as:
+* Creating an MD5 or SHA1 hash of the entire disk and its paritions.
+* Creating copies of the evidence to analyze instead of the main source.
+* Creating an MD5 or SHA1 hash of the copies and ensuring that they match the main source's hash.
+* Physically secure the original source somewhere safe.
+
+### What is the Incident Response Process?
+The incident response process is a sevem step process by which action should be taken if or when an  incident is detected. The seven steps are as follows:
+* Incident response team prparation
+* Incident detection
+* Initial response
+* Formulate response strategy
+* Data collection
+* Forensic Analysis
+* Document findings
+
+### Where Do We Look For Evidence?
+When we are looking for evidence, what we want to acquire depends on the scenario. There are three main categories of information to acquire:
+* If we want to find information in memory, we would want to make sure we took everything responsible for virtual and physical memory e.g. RAM sticks.
+* If we want to find information on the drive, we would want to make sure we had either the entire physical drive or the partitions where all the information is.
+* If we want to find information within network traffic, we would want to make sure that we were enacting full pacaket capturing.
+
+### The One Thing You Shouldn't Do During Initial Response!
+As long as it is safe to do so, you should refrain from simply pulling the plug on (or turing off) amachine. This loss of powers will more than likely destroy evidence. Since critical data may be stored in some volatile way, all care must go saving as much evidence as possible.
+
+### The Tools For Information Gathering!
+In order to collect data, we were given access to several new applications that we get to try out. The applications include:
+* FTK Imager:
+* Volatility:
+* Yara
+
 ## Week 1 Write-Up: The Basics of Malware
 This first week of class was choked full of information and as such was the typical first week experience for pretty much any class. We learned a whole lot of new terminology that was foriegn to many of us, we were introduced to an online Virtual Machine (VM) extravaganza, and were introduced to many new tools and techniques that I had personally never heard of. We also learned about what malware actually is, and why it exists and is created.
  
