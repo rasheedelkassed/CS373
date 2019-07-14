@@ -63,7 +63,7 @@ In order to collect data, we were given access to several new applications that 
 * Yara: Malware plugins for Volatility. I'll add an image of the editor even though I have no idea what it does. ![YaraEditor](/images/YaraEditor.PNG)
 
 ### Anything Else?
-I'm still working through several of the follow along, it's been a busy week. I'll hopefully have better information to add next week!
+I'm still working through several of the follow alongs, it's been a busy week. I'll hopefully have better information to add next week!
 
 ### Citations
 Much of the information on this blog post is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
