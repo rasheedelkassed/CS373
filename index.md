@@ -51,13 +51,20 @@ We were tasked with analyzing a folder filled with samples, determining which we
 
 File 068D5B62254DC582F3697847C16710B7 - CLEAN
 That fact that it is self deleting raises some red flags, but it seems clean. All it does is access the kbdus.dll file (a file to do with the US keyboard layout), and then creates a script that deletes both the created file and the calling process.
+![Sample1Cuckoo](/images/Sample1Cuckoo.PNG)
 
 File 00670F2B9631D0F97C7CfC6C764DD9D9 - DIRTY
 This file added an internet explorer icon to the desktop with a suspicious home page.
+![Sample2Cuckoo](/images/Sample2Cuckoo.PNG)
 
-File 4844FD851088A11E240CFE6B54096209
+File 4844FD851088A11E240CFE6B54096209 - CLEAN
+This file is a program called LADS by Frank Heyne. While it's weird that it instantly deletes itself when ran normally, it is totally safe.
 
-File A1874F714F7A15399B9FAE968180B303
+File A1874F714F7A15399B9FAE968180B303 - DIRTY
+The file almost instantly deleted itself upon running Cuckoo. When looking through the logs generated, it looks like a file named print.exe was created in the temp file. There was also a new .dll file generated as well as this new .png file:
+![InterestingPicture](/images/InterestingPicture.PNG)
+
+Now I need to pick one and figure out what it does in depth...
 
 
 
