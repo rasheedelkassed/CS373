@@ -64,9 +64,24 @@ File A1874F714F7A15399B9FAE968180B303 - DIRTY
 The file almost instantly deleted itself upon running Cuckoo. When looking through the logs generated, it looks like a file named print.exe was created in the temp file. There was also a new .dll file generated as well as this new .png file:
 ![InterestingPicture](/images/InterestingPicture.PNG)
 
-Now I need to pick one and figure out what it does in depth...
+Now I need to pick a dirty sample and figure out what it does in depth...
+File 00670F2B9631D0F97C7CfC6C764DD9D9 adds an internet explorer icon to the user's desktop after it is ran. This is because the program has also changed the internet homepage. What this does is whenever you run internet explorer, you are sent to a malicous website with no time to react. With the running of this program, several files are created. First, a file called Dx.bat is created that copies bad.exe to c:\qusla.exe. This file also addes a registry key.
+![HiddenAttrib](/images/HiddenAttrib.PNG)
 
+Then, a file named text.txt is created whose contents seems to be the end of the malicous homepage's url.
+![TextFile](/images/TextFile.PNG)
 
+A file named R000000000012.clb is also created, but I have no idea what it does.
+![CLB](/images/CLB.PNG)
+
+Using FileInsight on 00670F2B9631D0F97C7CfC6C764DD9D9 also revealed references to hau.exe and msns.exe as well as several questionable URLs.
+![Websites](/images/Websites.PNG)
+![EXEs](/images/EXEs.PNG)
+
+In order to find the malware sample easier in the future, I made the following yara signature:
+![Hau](/images/Hau.PNG)
+
+These were tested on several files and only matched with the original malware sample.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
