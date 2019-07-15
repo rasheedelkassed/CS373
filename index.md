@@ -46,6 +46,21 @@ Through this week's material, it appears that Cuckoo creates several log files a
 
 Basically, what Cuckoo is doing is waiting for a call to the Create Process API that in then hijacks. This allows it to have information that would normally difficult is access.
 
+### Putting It All Together!
+We were tasked with analyzing a folder filled with samples, determining which were clean and which were dirty, and then writing a yara signature for one of the malicious ones. I first needed to figure out which files were malicous.
+
+File 068D5B62254DC582F3697847C16710B7 - CLEAN
+That fact that it is self deleting raises some red flags, but it seems clean. All it does is access the kbdus.dll file (a file to do with the US keyboard layout), and then creates a script that deletes both the created file and the calling process.
+
+File 00670F2B9631D0F97C7CfC6C764DD9D9 - DIRTY
+This file added an internet explorer icon to the desktop with a suspicious home page.
+
+File 4844FD851088A11E240CFE6B54096209
+
+File A1874F714F7A15399B9FAE968180B303
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Week 2 Write-Up: Advanced Forensic Methods and Tools
