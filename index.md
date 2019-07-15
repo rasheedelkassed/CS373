@@ -5,12 +5,22 @@ This blog is being done as an ongoing weekly homework assignment for OSU's onlin
 ## Week 3 Write-Up: Malware Defense
 This week was a fairly hands-on week. After we learned enough about the theory behind malware defense, it was time to put in the practice. We were first tasked with creating Yara rules for several test files.
 
+### How Does Malware Attack?
+The majority of malware follows an attack pattern the boils down into the following steps:
+* Execute code on a system
+* Coceal one's self on a system
+* Persist on a system
+* Harvest data from a sysetm
+* Get the data back to the attacker
+
+### How Do We Defend Against an Attack?
+
 ### What is Yara?
 Yara and Yara Editor are tools that allow the matching of patterns found between files using a rule-based approach. This means that you create a rule based on information found within the sample files, and then search for files that have the same sort of signatures. These signatures are usually in the form of strings expressed like "mystring," and byte patterns/hexadecimal strings expressed as {43 72 61 7A 79}. You can then use these signatures with conditional statements (basically boolean statements) to match to the correct files.
 ![YaraExampleRule](/images/YaraExampleRule.PNG)
 In the above image, you can see that I have created a rule named "exampleRule." This rule contains variables for the strings "anexamplestring.exe" and "yaraiscool" with a conditional that ors the two of them. When search through files, this rule will search for either one of these strings and return a hit if they are found.
 
-### Using Yara
+### Using Yara!
 Now for the (sort of) real thing. We were tasked with creating several rules for samples in some provided folders. Each folder needed it's own rule that only worked on those files. To create a rule for the first folder of samples, I needed to find some strings that were common between them. To do this, I opened up FileInsight and used the provided plugins Strings: a plugin that found all strings above a certain number of characters and then displayed a sorted list of the strings by length and StringsAll: a plugin that found all strings no matter the length and displayed them without sorting. 
 ![FileInsightSearch](/images/FileInsightSearch.PNG)
 
@@ -24,6 +34,16 @@ and the following on the windows\system32 folder:
 ![Sample1System32](/images/Sample1System32.PNG)
 
 The fact that all seven files matched without raising any false positives in system32 shows that this rule works.
+To find rules for future samples, I did essentially the same as above and was able to come up with rules for those as well.
+
+### Automating Our Analysis!
+While using yara is great for small projects that require the analysis of malware, anti-malware isn't something that can be done on a reasonable time frame manually. Instead, ww would want to automate our anti-malware. The automation of anti-malware comes with the advantages of scalability, consistencey, and performance concerns. However, automated anti-malware lacks the same context, is prone to evasion, and is prone to both proving and DoS/DDoS attacks. The way we plan on performing automated anti-malware is through a piece of software called Cuckoo
+
+### Using Cuckoo
+Through this week's material, it appears that Cuckoo creates several log files about what a process is doing. To use Cuckoo, we first renamed a malware sample to the name "bad" (the same malware from week 1's lab I believe). We then ran a program called analysis.py. This then created several chronologically ordered csv files about what the file named "bad" did.
+![Cuckoo](/images/Cuckoo.PNG)
+
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
