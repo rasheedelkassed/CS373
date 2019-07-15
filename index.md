@@ -13,13 +13,18 @@ In the above image, you can see that I have created a rule named "exampleRule." 
 ### Using Yara
 Now for the (sort of) real thing. We were tasked with creating several rules for samples in some provided folders. Each folder needed it's own rule that only worked on those files. To create a rule for the first folder of samples, I needed to find some strings that were common between them. To do this, I opened up FileInsight and used the provided plugins Strings: a plugin that found all strings above a certain number of characters and then displayed a sorted list of the strings by length and StringsAll: a plugin that found all strings no matter the length and displayed them without sorting. 
 ![FileInsightSearch](/images/FileInsightSearch.PNG)
+
 The above image shows some bookmarked sections in one of the samples I'm creating the rule for. The light blue highlighting is a bookmark created by the find functionality that comes with FileInsight, and the darker highlight is a manual bookmark that I place. These tools allowed me to create the following rule for the folder of samples:
 ![YaraSample1](/images/YaraSample1.PNG)
-To test it, I used the windows command prompt and ran the following on the sample folder:
+
+To test it, I used the windows command prompt and ran the following commands on the sample folder:
 ![Sample1SampleFolder](/images/Sample1SampleFolder.PNG)
+
 and the following on the windows\system32 folder:
 ![Sample1System32](/images/Sample1System32.PNG)
+
 The fact that all seven files matched without raising any false positives in system32 shows that this rule works.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Week 2 Write-Up: Advanced Forensic Methods and Tools
