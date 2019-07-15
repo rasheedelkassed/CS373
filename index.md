@@ -2,6 +2,20 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
+## Week 3 Write-Up: Malware Defense
+This week was a fairly hands-on week. After we learned enough about the theory behind malware defense, it was time to put in the practice. We were first tasked with creating Yara rules for several test files.
+
+### What is Yara?
+Yara and Yara Editor are tools that allow the matching of patterns found between files using a rule-based approach. This means that you create a rule based on information found within the sample files, and then search for files that have the same sort of signatures. These signatures are usually in the form of strings expressed like "mystring," and byte patterns/hexadecimal strings expressed as {43 72 61 7A 79}. You can then use these signatures with conditional statements (basically boolean statements) to match to the correct files.
+![YaraExampleRule](/images/YaraExampleRule.PNG)
+In the above image, you can see that I have created a rule named "exampleRule." This rule contains variables for the strings "anexamplestring.exe" and "yaraiscool" with a conditional that ors the two of them. When search through files, this rule will search for either one of these strings and return a hit if they are found.
+
+### Using Yara
+Now for the (sort of) real thing. We were tasked with creating several rules for samples in some provided folders. Each folder needed it's own rule that only worked on those files. To create a rule for the first folder of samples, I needed to find some strings that were common between them. To do this, I opened up 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 2 Write-Up: Advanced Forensic Methods and Tools
 This second week, like last week, was also full of fresh new information that I had never heard about. For the most part, the tools we were introduced to were just as foregin as the ones from last week. To put this week's lessons simply, we learned about properly reacting to incidents using the correct forensics methods. Similar to last week, the new tools we were introduced to was used to practice the forensics methods.
 
