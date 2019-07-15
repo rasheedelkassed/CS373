@@ -8,9 +8,9 @@ This week was a fairly hands-on week. After we learned enough about the theory b
 ### How Does Malware Attack?
 The majority of malware follows an attack pattern the boils down into the following steps:
 * Execute code on a system
-* Coceal one's self on a system
+* Conceal one's self on a system
 * Persist on a system
-* Harvest data from a sysetm
+* Harvest data from a system
 * Get the data back to the attacker
 
 ### How Do We Defend Against an Attack?
@@ -21,7 +21,7 @@ Yara and Yara Editor are tools that allow the matching of patterns found between
 In the above image, you can see that I have created a rule named "exampleRule." This rule contains variables for the strings "anexamplestring.exe" and "yaraiscool" with a conditional that ors the two of them. When search through files, this rule will search for either one of these strings and return a hit if they are found.
 
 ### Using Yara!
-Now for the (sort of) real thing. We were tasked with creating several rules for samples in some provided folders. Each folder needed it's own rule that only worked on those files. To create a rule for the first folder of samples, I needed to find some strings that were common between them. To do this, I opened up FileInsight and used the provided plugins Strings: a plugin that found all strings above a certain number of characters and then displayed a sorted list of the strings by length and StringsAll: a plugin that found all strings no matter the length and displayed them without sorting. 
+Now for the (sort of) real thing. We were tasked with creating several rules for samples in some provided folders. Each folder needed its own rule that only worked on those files. To create a rule for the first folder of samples, I needed to find some strings that were common between them. To do this, I opened up FileInsight and used the provided plugins Strings: a plugin that found all strings above a certain number of characters and then displayed a sorted list of the strings by length and StringsAll: a plugin that found all strings no matter the length and displayed them without sorting. 
 ![FileInsightSearch](/images/FileInsightSearch.PNG)
 
 The above image shows some bookmarked sections in one of the samples I'm creating the rule for. The light blue highlighting is a bookmark created by the find functionality that comes with FileInsight, and the darker highlight is a manual bookmark that I place. These tools allowed me to create the following rule for the folder of samples:
@@ -37,13 +37,13 @@ The fact that all seven files matched without raising any false positives in sys
 To find rules for future samples, I did essentially the same as above and was able to come up with rules for those as well.
 
 ### Automating Our Analysis!
-While using yara is great for small projects that require the analysis of malware, anti-malware isn't something that can be done on a reasonable time frame manually. Instead, ww would want to automate our anti-malware. The automation of anti-malware comes with the advantages of scalability, consistencey, and performance concerns. However, automated anti-malware lacks the same context, is prone to evasion, and is prone to both proving and DoS/DDoS attacks. The way we plan on performing automated anti-malware is through a piece of software called Cuckoo
+While using yara is great for small projects that require the analysis of malware, anti-malware isn't something that can be done on a reasonable time frame manually. Instead, ww would want to automate our anti-malware. The automation of anti-malware comes with the advantages of scalability, consistency, and performance concerns. However, automated anti-malware lacks the same context, is prone to evasion, and is prone to both proving and DoS/DDoS attacks. The way we plan on performing automated anti-malware is through a piece of software called Cuckoo
 
 ### Using Cuckoo
 Through this week's material, it appears that Cuckoo creates several log files about what a process is doing. To use Cuckoo, we first renamed a malware sample to the name "bad" (the same malware from week 1's lab I believe). We then ran a program called analysis.py. This then created several chronologically ordered csv files about what the file named "bad" did.
 ![Cuckoo](/images/Cuckoo.PNG)
 
-
+Basically, what Cuckoo is doing is waiting for a call to the Create Process API that in then hijacks. This allows it to have information that would normally difficult is access.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ The short answer: very carefully. Precautions must be put in place in order to s
 
 ### What is the Incident Response Process?
 The incident response process is a seven step process by which action should be taken if or when an  incident is detected. The seven steps are as follows:
-* Incident response team preparation: The team must be prepared for a incident at any time.
+* Incident response team preparation: The team must be prepared for an incident at any time.
 * Incident detection: The actual detection of the incident.
 * Initial response: The team's immediate response to the incident.
 * Formulate response strategy: The team creates a strategy to tackle or otherwise handle the incident.
@@ -152,5 +152,6 @@ This week gave us insight into how the rest of the course is going to go, at lea
  
 ### Citations
 Much of the information on this blog post is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
+
 
 
