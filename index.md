@@ -15,8 +15,11 @@ Now for the (sort of) real thing. We were tasked with creating several rules for
 ![FileInsightSearch](/images/FileInsightSearch.PNG)
 The above image shows some bookmarked sections in one of the samples I'm creating the rule for. The light blue highlighting is a bookmark created by the find functionality that comes with FileInsight, and the darker highlight is a manual bookmark that I place. These tools allowed me to create the following rule for the folder of samples:
 ![YaraSample1](/images/YaraSample1.PNG)
-
-
+To test it, I used the windows command prompt and ran the following on the sample folder:
+![Sample1SampleFolder](/images/Sample1SampleFolder.PNG)
+and the following on the windows\system32 folder:
+![Sample1System32](/images/Sample1System32.PNG)
+The fact that all seven files matched without raising any false positives in system32 shows that this rule works.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Week 2 Write-Up: Advanced Forensic Methods and Tools
