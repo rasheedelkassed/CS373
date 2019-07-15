@@ -3,7 +3,7 @@
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
 ## Week 3 Write-Up: Malware Defense
-This week was a fairly hands-on week. After we learned enough about the theory behind malware defense, it was time to put in the practice. We were first tasked with creating Yara rules for several test files.
+This week covered how malware attacks and shared some methods and tools that help defend against these attacks. This week was fairly hands-on with the tools and we were provided with many labs to help give some understanding about the tools. After we learned enough theory, it was time to put in the practice. We were first tasked with creating Yara rules for several test files. Afterwards, we were asked to test out Cuckoo. Finally, we were asked to put it all together.
 
 ### How Does Malware Attack?
 The majority of malware follows an attack pattern the boils down into the following steps:
@@ -14,6 +14,7 @@ The majority of malware follows an attack pattern the boils down into the follow
 * Get the data back to the attacker
 
 ### How Do We Defend Against an Attack?
+There are several popular technologies and methods that lead to a decent defense against malware. Most, if not all, techniques are essentially content engines that interpret content rules. What this means is that the techniques all have a set of guidelines they use to determine whether whatever they are looking at should be allowed through or not. 
 
 ### What is Yara?
 Yara and Yara Editor are tools that allow the matching of patterns found between files using a rule-based approach. This means that you create a rule based on information found within the sample files, and then search for files that have the same sort of signatures. These signatures are usually in the form of strings expressed like "mystring," and byte patterns/hexadecimal strings expressed as {43 72 61 7A 79}. You can then use these signatures with conditional statements (basically boolean statements) to match to the correct files.
@@ -37,9 +38,9 @@ The fact that all seven files matched without raising any false positives in sys
 To find rules for future samples, I did essentially the same as above and was able to come up with rules for those as well.
 
 ### Automating Our Analysis!
-While using yara is great for small projects that require the analysis of malware, anti-malware isn't something that can be done on a reasonable time frame manually. Instead, ww would want to automate our anti-malware. The automation of anti-malware comes with the advantages of scalability, consistency, and performance concerns. However, automated anti-malware lacks the same context, is prone to evasion, and is prone to both proving and DoS/DDoS attacks. The way we plan on performing automated anti-malware is through a piece of software called Cuckoo
+While using yara is great for small projects that require the analysis of malware, anti-malware isn't something that can be done on a reasonable time frame manually. Instead, ww would want to automate our anti-malware. The automation of anti-malware comes with the advantages of scalability, consistency, and performance concerns. However, automated anti-malware lacks the same context, is prone to evasion, and is prone to both proving and DoS/DDoS attacks. 
 
-### Using Cuckoo
+### What Is Cuckoo?
 Through this week's material, it appears that Cuckoo creates several log files about what a process is doing. To use Cuckoo, we first renamed a malware sample to the name "bad" (the same malware from week 1's lab I believe). We then ran a program called analysis.py. This then created several chronologically ordered csv files about what the file named "bad" did.
 ![Cuckoo](/images/Cuckoo.PNG)
 
