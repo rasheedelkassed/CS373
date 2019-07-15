@@ -47,7 +47,7 @@ Through this week's material, it appears that Cuckoo creates several log files a
 Basically, what Cuckoo is doing is waiting for a call to the Create Process API that in then hijacks. This allows it to have information that would normally difficult is access.
 
 ### Putting It All Together!
-We were tasked with analyzing a folder filled with samples, determining which were clean and which were dirty, and then writing a yara signature for one of the malicious ones. I first needed to figure out which files were malicous.
+We were tasked with analyzing a folder filled with samples, determining which were clean and which were dirty, and then writing a yara signature for one of the malicious ones. I first needed to figure out which files were malicious.
 
 File 068D5B62254DC582F3697847C16710B7 - CLEAN
 That fact that it is self deleting raises some red flags, but it seems clean. All it does is access the kbdus.dll file (a file to do with the US keyboard layout), and then creates a script that deletes both the created file and the calling process.
@@ -65,10 +65,10 @@ The file almost instantly deleted itself upon running Cuckoo. When looking throu
 ![InterestingPicture](/images/InterestingPicture.PNG)
 
 Now I need to pick a dirty sample and figure out what it does in depth...
-File 00670F2B9631D0F97C7CfC6C764DD9D9 adds an internet explorer icon to the user's desktop after it is ran. This is because the program has also changed the internet homepage. What this does is whenever you run internet explorer, you are sent to a malicous website with no time to react. With the running of this program, several files are created. First, a file called Dx.bat is created that copies bad.exe to c:\qusla.exe. This file also addes a registry key.
+File 00670F2B9631D0F97C7CfC6C764DD9D9 adds an internet explorer icon to the user's desktop after it is ran. This is because the program has also changed the internet homepage. What this does is whenever you run internet explorer, you are sent to a malicious website with no time to react. With the running of this program, several files are created. First, a file called Dx.bat is created that copies bad.exe to c:\qusla.exe. This file also added a registry key.
 ![HiddenAttrib](/images/HiddenAttrib.PNG)
 
-Then, a file named text.txt is created whose contents seems to be the end of the malicous homepage's url.
+Then, a file named text.txt is created whose contents seems to be the end of the malicious homepage's url.
 ![TextFile](/images/TextFile.PNG)
 
 A file named R000000000012.clb is also created, but I have no idea what it does.
@@ -82,6 +82,9 @@ In order to find the malware sample easier in the future, I made the following y
 ![Hau](/images/Hau.PNG)
 
 These were tested on several files and only matched with the original malware sample.
+
+### Citations
+Much of the information on this blog post is provided by the Malware Defense slides created by Craig Schmugar.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -190,6 +193,8 @@ This week gave us insight into how the rest of the course is going to go, at lea
  
 ### Citations
 Much of the information on this blog post is provided by the Basics of Malware 1 & 2 slides created by Christiaan Beek.
+
+
 
 
 
