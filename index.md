@@ -2,6 +2,31 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
+## Week 4 Write-Up: Vulnerabilities and Exploits
+Week four covered the manipulation of software and the usage of exploits on vulnerabilities on said software. After a little bit of a history lesson about the exploitation of software, we were introduced to a new tool and were given a little bit of practice on exploiting a simple program's vulnerabilities. We did not, however, learn anything about discovering vulnerabilities; we only learned about exploiting known vulnerabilities.
+
+### What is Software Manipulation?
+Software manipulation is the taking control of a piece of software. This is done in one of two ways: 
+* The taking advantage of bugs that produce undefined behavior.
+* The taking advantage of improper configurations such as bad passwords.
+
+### What Get Targeted?
+In the past, if someone wanted to attack an organization, they would attack the perimeter of that organization. This means that the attack vectors would be those that directly interact with the internet like the organization's website. Nowadays, organizations have significantly hardened the defenses on their perimeters. This means that an attacker today is more likely to attack the users inorder to gain access to the less hardened interior of the organization.
+
+### What Tools Do We Use?
+We were only introduced to one tool this week for the usage of software exploitation, and this tool is called WinDbg.
+![WinDbg](/images/WinDbg.PNG)
+
+With this tool, we are able to analyze what exactly a process is doing. Using this, we can force a bug to happen within a process and then try to figure out how we can manipulate it.
+
+### The Exploit Lab
+This week we were tasked with following along and working on a lab. This lab was divided into three lessons each with questions we had to answer.
+
+#### Lesson 1 Questions
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 3 Write-Up: Malware Defense
 This week covered how malware attacks and shared some methods and tools that help defend against these attacks. This week was fairly hands-on with the tools and we were provided with many labs to help give some understanding about the tools. After we learned enough theory, it was time to put in the practice. We were first tasked with creating Yara rules for several test files. Afterwards, we were asked to test out Cuckoo. Finally, we were asked to put it all together.
 
