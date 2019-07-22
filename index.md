@@ -23,7 +23,17 @@ With this tool, we are able to analyze what exactly a process is doing. Using th
 This week we were tasked with following along and working on a lab. This lab was divided into three lessons each with questions we had to answer.
 
 #### Lesson 1 Questions
+![Lesson1Questions](/images/Lesson1Questions.PNG)
 
+Lesson 1 allowed us to practice the basics of using WinDbg on a (for testing purposes) website. We covered simple things like what memory address certain parts get loaded at, the values of registers at certain points, and the usage of commands such as `u`, `bp`, `du poi`, and `g`. We also got a fun part where the unicode in one of the registers read "FluffyBunniesDontFlapOrQuack."
+
+#### Lesson 2 Questions
+![Lesson2Questions](/images/Lesson2Questions.PNG)
+
+Lesson 2 is where we gain enough understanding to exploit the vulnerabilities and then attacking. We first deconstruct the vulnerable function in question and determine the data type of its inputs. Then we determine what the vulnerable data is using three methods. We "smash the stack" and overflow. I'm assuming this is done with the letter "A" as registers that are affected are the sequence of 41414141. Then, we "stomp the stack" in that we manipulate memory that is being used in a manner that conflicts with what is currently using the memory. 
+![StompTheStack](/images/StompTheStack.PNG)
+
+Then we determine the address of the function that contains the vulnerability 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
