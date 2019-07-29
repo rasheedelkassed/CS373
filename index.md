@@ -3,7 +3,7 @@
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
 ## Week 5 Write-Up:
-Week five covered the manipulation of Windows memory in order to hide malicious files. More specifically, the week covered the definition, purpose, and detection of techniques used to hide malicious files. To aid in our task of finding difficult to detect changes to the system, we were once again introduced to several new tools. What's interesting about this week's tools is their similarity to some tools we've already been introduced to.
+Week five covered the manipulation of Windows memory in order to hide malicious files. More specifically, the week covered the definition, purpose, and detection of techniques used to hide malicious files. To aid in our task of finding difficult to detect changes to the system, we were once again introduced to several new tools. What's interesting about this week's tools is their similarity to some tools we've already been introduced to. This week was, while difficult to understand, short and sweet so there's not much to write about.
 
 ### What is a Rootkit?
 A rootkit is, put simply, malware that hides itself and its actions and makes it difficult to detect. This means that malicious code can be activated on a machine without substantial fear of being detected by users and any saftey measures put in place on the system. The most common method of hiding employed by rootkits is a technique known as hooking.
