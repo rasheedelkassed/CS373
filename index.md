@@ -2,6 +2,44 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
+## Week 5 Write-Up:
+Week five covered the manipulation of Windows memory in order to hide malicious files. More specifically, the week covered the definition, purpose, and detection of techniques used to hide malicious files. To aid in our task of finding difficult to detect changes to the system, we were once again introduced to several new tools. What's interesting about this week's tools is their similarity to some tools we've already been introduced to.
+
+### What is a Rootkit?
+A rootkit is, put simply, malware that hides itself and its actions and makes it difficult to detect. This means that malicious code can be activated on a machine without substantial fear of being detected by users and any saftey measures put in place on the system. The most common method of hiding employed by rootkits is a technique known as hooking.
+
+### What is Hooking?
+Hooking is the hijacking of messages for use in ways other than the intended usage. For example, when a rootkit changes the functinality of an operating system function call in order to hide itself from outside view, that is hooking. While generally used for innocent things like debugging software or benchmarking programs, it is also the main method that rootkits use to hide their existance.
+
+### How Do We Detect Unwanted Hooking?
+When a function is hooked onto, it changes pointer values in order to execute or skip the code it wants. An aspiring anti-virus software would periodically check the pointers and make sure that the correct memory addresses are being stored in them. If they're not, then we know a program is using the hooking technique.
+
+### What Is A Bootkit?
+Bootkits are similiar to rootkits in that they are one of several types of malware that attempt to hide themselves on a system. Bootkits generally attack the Master Boot Record (occasionally they attack other parts of the system boot process as well) in order to manipulate the system in the way they want. Since a bootkit gets run before the kernel does, a bootkit has significantly more power over a system than a rootkit relying on kernal power does.
+
+### What Tools Do We Use?
+In order to help the process of traversing Windows memory, we were introduced to several new tools.  These tools were:
+* WinDBG remote: Provides a method of using WinDBG on a remote system.
+
+![WinDBGRemote](/images/WinDBGRemote.PNG)
+
+* Tuluka: A program written by a malware researcher to aid in the analysis of rootkits.
+
+![Tuluka](/images/Tuluka.PNG)
+
+* Process Hacker: A program similar to that of process explorer with both read and write functionality.
+
+![ProcessHacker](/images/ProcessHacker.PNG)
+
+* LiveKD: Provides a read-only view of kernel memory of a running process.
+
+![LiveKD](/images/LiveKD.PNG)
+
+### Citations
+Much of the information on this blog post is provided by the Malware Defense powerpoint slides and exercises created by Aditya Kapoor.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 4 Write-Up: Vulnerabilities and Exploits
 Week four covered the manipulation of software and the usage of exploits on vulnerabilities on said software. After a little bit of a history lesson about the exploitation of software, we were introduced to a new tool and were given a little bit of practice on exploiting a simple program's vulnerabilities. We did not, however, learn anything about discovering vulnerabilities; we only learned about exploiting known vulnerabilities.
 
