@@ -2,7 +2,54 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
-## Week 5 Write-Up:
+## Week 6 Write-Up: Network Security
+Week six covered threats that can attack networks and the measures taken to protect against them. We were given, as with almost any other week, new tools to aid in our discovery of this field of technological security. These tools allowed us to catch network traffic to and from our system in real time.
+
+### Why Do We Need Network Security?
+Network Security is used to help with the protection of hosts. This is done by keeping dangerous hosts out, preventing data theft and loss, and hiding network traffic. Several threats are also directed directly at networks. These include Distributed Denial of Service (DDoS) attacks as well as attacks directly to the network. Some networks are threats all on there own. These include worms, botnets, resource theft, and infrastucture damage.
+
+### How Do We Protect The Network?
+To protect a network, we use several key tools and strategies:
+* Positive policy: A synonym for whitelisting. Allowing somethings onto the network while disallowing other things.
+* Firewalls / Security Zones: Filters (firewalls) being used for network traffic between zones. Gateways are another way of filtering traffic.
+* Defense in Depth: Layering the defenses upon itself until you have a nigh impenatrable fortress of network security.
+* Intrusion Detection: Detecting anomalies to determine whether or not you are being attacked
+* Honeynets / Intrusion Deception: Provide attackers with a dummy network that wastes their time.
+* Quarantine: If a host is dangerous, prevent it from transfering traffic with any other machines.
+* Reputation: Use a library of things and cross-reference it to determine if something is good or bad.
+Every technique comes with its own set of advantages and disadvantages.
+
+### How Do We Get Attacked?
+There are several different kinds of attacks that could possibly target a network:
+* Man in the Middle (MITM): An attack where one person (the man in the middle) can intercept, direct, and manipulate data sent between two hosts. When used for evil, MITM attacks can lead to ARP poisoning where someone floods a netowkr with arp messages, or TCp hijacking where data in a tcp stream is manipulated in some way. When used for good, MITM can be used to terminate TCP procies, SSL manipulation, and the preventinon of questionable data being on sites and servers.
+* Hidden Data Transmissions: An attack where data is transmitted through unintended channels to remain undetected. Examples of this legitmate channel misuse include hiding in plain sight, payload tunnerling, overlapping IP segments, data at the end of a datagram or file, and steganography. 
+* Resource Consumption Attacks: Attacks such as DoS or DDoS that are designed to consume resources and ensure a targeted service becomes unusable. The types of DoS methods include network exhaustion, cpu exhaustion, memory exhaustion, storage exhaustion, application vulnerability exploitation, and other finite resource exploits.
+* Bugs and Backdoors: Design flaws that allow for compromise. These compromises include built-in or default passwords, packet bombs, protocol design bugs, and buffer overflow.
+
+### How Do Attackers Know What To Attack?
+When an attacker wants to attack a machine, they must first know of that machine's existance. They do this by performing reconnaissance. There are two kinds of reconnaissance:
+* Active Reconnaissance: scanning for hosts using simple commands like ping and then scanning for vulnerabilities.
+* Passive Reconnaissane: The generally illegal act of gather data using equipment, passive mapping of services, and content like web pages and e-mails.
+
+### Can We Defend Against Reconnaissance?
+Not particularly. Policy and deep inspection, along with honenets, can help slow down active reconnaissance. The only ways to slow down passive reconnaissance is the usage of physical security or cryptography.
+
+### The New Tool!
+We were provided with a new tool in order to help us better understand network security. This tool was WireShark:
+![Wireshark](/images/Wireshark.PNG)
+
+Along with wireshark, we were given some scripts we had to write alongside this great tool in order to help better our understanding of network analysis.
+
+### The Robustness Principle!
+This week, we've been asked to review a document and express our agreement and disagreement with the statements it is making. There really isn't anything I don't agree with in the principle. In software engineering I and II, we were taught the idea that software we create must be open to change and ready for anything. This idea shown to us in these software engineering courses seems incredibly similar to that of the robustness principle by Jonathan Postel. It so similar that it may be the inspiration for it. The majority of the document represent the same ideas; however, the last one strays a tiny bit. Instead of staying on the same spiel, the author starts talking in a way very similar to Occams Razor, the idea that the simplist solution is more than likely the best. If the software isn't simple, it breaks the previous rule and is no longer adaptiable and open to change.
+![Robustness](/images/Robustness.PNG)
+
+### Firewall Policy Sheet!
+This week, along with the robustness principle exercies, we were also asked to create the policy for a zone diagram provided to us.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## Week 5 Write-Up: Windows Memory Manipulation
 Week five covered the manipulation of Windows memory in order to hide malicious files. More specifically, the week covered the definition, purpose, and detection of techniques used to hide malicious files. To aid in our task of finding difficult to detect changes to the system, we were once again introduced to several new tools. What's interesting about this week's tools is their similarity to some tools we've already been introduced to. This week was, while difficult to understand, short and sweet so there's not much to write about.
 
 ### What is a Rootkit?
