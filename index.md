@@ -48,6 +48,9 @@ This week, we've been asked to review a document and express our agreement and d
 This week, along with the robustness principle exercies, we were also asked to create the policy for a zone diagram provided to us. I did my best, but I really didn't have much of a clue as to what I was doing:
 ![Firewall](/images/Firewall.PNG)
 
+### Citations
+Much of the information on this blog post is provided by the Network Security powerpoint slides and exercises created by Ram Venugopalan and Geoffrey Cooper.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Week 5 Write-Up: Windows Memory Manipulation
