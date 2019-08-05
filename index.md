@@ -36,7 +36,7 @@ Not particularly. Policy and deep inspection, along with honenets, can help slow
 
 ### The New Tool!
 We were provided with a new tool in order to help us better understand network security. This tool was WireShark:
-![Wireshark](/images/Wireshark.PNG)
+![WireShark](/images/WireShark.PNG)
 
 Along with wireshark, we were given some scripts we had to write alongside this great tool in order to help better our understanding of network analysis.
 
@@ -45,7 +45,8 @@ This week, we've been asked to review a document and express our agreement and d
 ![Robustness](/images/Robustness.PNG)
 
 ### Firewall Policy Sheet!
-This week, along with the robustness principle exercies, we were also asked to create the policy for a zone diagram provided to us.
+This week, along with the robustness principle exercies, we were also asked to create the policy for a zone diagram provided to us. I did my best, but I really didn't have much of a clue as to what I was doing:
+![Firewall](/images/Firewall.PNG)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
