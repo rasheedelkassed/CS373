@@ -2,6 +2,77 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
+## Week 7 Write-Up: Web Security
+Week seven showed off the evil side of computer security so that we, the students, better understand what we're up against. 
+
+### What is a Web Delivery Mechanism?
+A web delivery mechanism is basically any web-based malware delivery system. Things from phishing to plug-in exploits all fall under the unbrella term of web delivery mechanism. With the understandably immense popularity that the web has, it's estimated that 95% of all malware is delivered to victims through the web. There are several different kinds of web-based malware delivery:
+* Phishing: An attempt to illegally attain sensitive information
+* Cross-site scripting: The injection of scripts that can affect other users on an otherwise trustworthy web service.
+* Browser exploitation: Malicious code that takes advantage of vulnerabilities found in the browser application.
+* Plug-in exploitation: Malicious code that takes advantage of vulnerabilites found in popular browser plug-ins like flash player.
+* MitB: A trojan that manipulates transactions that take place within the browser.
+
+### How Does The Code Get Injected?
+There are several different injection points in the browser that can be used by malicious code:
+* De-obfuscated Content: The rendered content is changed in some way.
+* JavaScript: Modifying scripts going in and out of the browser.
+* HTML DOM Tree: Attacked through the browser or its extensions.
+* Raw HTML: Intercepting content and changing it.
+* HTTP: An attack directly on the network.
+
+### What is a User-Level Attack?
+A user-level attack is an attack on the end user rather than any sort of technological attack. As humans, we are all at risk of psychological manipulation, add in the fact that we are quick to click on pretty much anything we see makes it understandable that this is a good avenue for attack.
+
+### What is Social Engineering?
+Social engineering is the manipulation of people in order to fulfill some malicious intent. For example, if you've ever gone to a website to download something and seen adverts with "Download Here!" plastered all over them, you've witnessed an example of social engineering. If you weren't paying attention, you would have downloaded some unwanted, and potentially malicious, software! As the lecturer of the week put it "I mean, people will install malware completely on their device and pay $29 to get it removed." 
+
+### How Are User-Level Attacks Performed?
+User level attacks exploit common character traits that users exhibit:
+* Impatience
+* Laziness
+* Self-proclaimed omniscience (I know what I'm doing!)
+* Clickaholicism (I can't stop clicking on everything)
+There are several different methods for performing these manipulative attacks:
+* Phishing: Fake URLs that ask for sensitive information that the normal website would ask for.
+* Fake Anti-Virus software: Mimics a legitimate anti virus software.
+* Fake Updates: Mimics a legitiamte software or OS update.
+* Forum Links: Phishing using forums as the delivery mechanism.
+* Search engine optimization poisoning: Gaming search engines to direct users to malicious content.
+* Social Media Links: Getting information through social media that you probably shouldn't have.
+* Malvertising: Fake advertisments that redirect to a malicious link.
+These methods cause users to unknowingly infect themselves by purposefully downloading the malicious content. This is done through the usage of executables, browser exploits, and malicious forms.
+
+### How Do We Protect Ourselves Against User-Level Attacks?
+There are several ways that we protect ourselves from attack:
+* URL Reputation Systems: Real-time protection and search link annotation.
+* Site Certification Services
+* Client and Gateway Anti-Virus/Anti-Malware
+* URL Shorteners
+* Content provider education
+* End user education: The holy grail, both amazing and nearly impossible.
+
+### What is a Browser-Level Attack?
+A browser level attack is any attack performed through an internet browser. Be it Firefox, Google Chrome, or Internet Explorer, all browsers are vulnerable to many different exploits. A browser can download, render, and execute maliciously crafted web content. This malicious web content exploits various vulnerabilities in  the browser. This process involves luring the user to the site, exploiting the browser, and then downloading and executing the actual payload the attacker wants to offload. This payload can be any type of malware, not just web-centric malicious content.
+
+### What is Malware Obfuscation?
+Malware obfuscation is what makes filtering page content for malicious looking code very difficult. This is done by renaming script variables to nonsense names, the removal of whitespace, using self-generating code, the usage of eval statements, and various encryption techniques.
+
+### How are Browser-Level Attacks Performed?
+There are several different types of attacks that can be performed on the browser:
+* Man in the middle attacks: Intercepting and modifying network traffic.
+* Man in the browser attacks: Intercepting and modifying network traffic from within the browser.
+* DNS spoofing: Serving the wrong IP for the right web address.
+* Clickjacking: Tricking the user into clicking the wrong thing by hiding it behind legitimate content.
+* SQL injection: Circumventing authorization and revealing private data in database backed sites.
+* Cross-site scripting: Exploting a browser's trust in a site to execute malicious scripts.
+* Cross-site request forgery: Exploit the server's trust in the browser to execute malicious code against the browser.
+
+### Citations
+Much of the information on this blog post is provided by the Network Security powerpoint slides and created by Cedric Cochin.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 6 Write-Up: Network Security
 Week six covered threats that can attack networks and the measures taken to protect against them. We were given, as with almost any other week, new tools to aid in our discovery of this field of technological security. These tools allowed us to catch network traffic to and from our system in real time.
 
