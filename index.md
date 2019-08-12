@@ -100,23 +100,23 @@ For protecting the users against all this web-based malware, we were shown (but 
 
 * Web Inspector: A scanning tool that also features recently detected malicious websites
 
-![Web Inspector](/images/Web Inspector.png)
+![WebInspector](/images/Web Inspector.png)
 
 * Virus Total: Another web scanning tool
 
-![Virus Total](/images/Virus Total.png)
+![VirusTotal](/images/Virus Total.png)
 
 * Linux JWhois: A domain registration data client
 
-![Linux JWhois](/images/Linux JWhois.png)
+![LinuxJWhois](/images/Linux JWhois.png)
 
 * Linux Dig: Domain Name System(DNS) resolver tool
 
-![Linux Dig](/images/Linux Dig.png)
+![LinuxDig](/images/Linux Dig.png)
 
 * Indicators of Compromise: provides contextual data about malicious objects
 
-![Indicators of Compromise](/images/Indicators of Compromise.png)
+![IndicatorsofCompromise](/images/Indicators of Compromise.png)
 
 ### Citations
 Much of the information on this blog post is provided by the Network Security powerpoint slides and created by Cedric Cochin.
