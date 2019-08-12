@@ -75,36 +75,47 @@ For performing our basic attacks and analysis for the labs that we had this week
 
 For protecting the users against all this web-based malware, we were shown (but didn't get to use) several other tools with pictures provided from the lecture:
 * Alexa: Used to determine general site prevalence
+
 ![Alexa](/images/Alexa.png)
 
 * Archive.org: Used to determine site changes over time (doesn't work for short-lived malware content)
+
 ![Archive](/images/Archive.png)
 
 * IPVoid: A blacklisted IP search
+
 ![IPVoid](/images/IPVoid.png)
 
 * CheckShortURL: A URL expander
 ![CheckShortURL](/images/CheckShortURL.png)
 
+
 * SiteDossier: General site information
+
 ![SiteDossier](/images/SiteDossier.png)
 
 * Webutation: URL reputation checker
+
 ![Webutation](/images/Webutation.png)
 
 * Web Inspector: A scanning tool that also features recently detected malicious websites
+
 ![Web Inspector](/images/Web Inspector.png)
 
 * Virus Total: Another web scanning tool
+
 ![Virus Total](/images/Virus Total.png)
 
 * Linux JWhois: A domain registration data client
+
 ![Linux JWhois](/images/Linux JWhois.png)
 
 * Linux Dig: Domain Name System(DNS) resolver tool
+
 ![Linux Dig](/images/Linux Dig.png)
 
 * Indicators of Compromise: provides contextual data about malicious objects
+
 ![Indicators of Compromise](/images/Indicators of Compromise.png)
 
 ### Citations
