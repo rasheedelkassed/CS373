@@ -75,17 +75,37 @@ For performing our basic attacks and analysis for the labs that we had this week
 
 For protecting the users against all this web-based malware, we were shown (but didn't get to use) several other tools with pictures provided from the lecture:
 * Alexa: Used to determine general site prevalence
-* Archive.org: Used to determine site changes over time (doesn't work for short-lived malware content)
-* IPVoid: A blacklisted IP search
-* CheckShortURL: A URL expander
-* SiteDossier: General site information
-* Webutation: URL reputation checker
-* Web Inspector: A scanning tool that also features recently detected malicious websites
-* Virus Total: Another web scanning tool
-* Linux JWhois: A domain registration data client
-* Linux Dig: Domain Name System(DNS) resolver tool
-* Indicators of Compromise: provides contextual data about malicious objects
+![Alexa](/images/Alexa.PNG)
 
+* Archive.org: Used to determine site changes over time (doesn't work for short-lived malware content)
+![Archive](/images/Archive.PNG)
+
+* IPVoid: A blacklisted IP search
+![IPVoid](/images/IPVoid.PNG)
+
+* CheckShortURL: A URL expander
+![CheckShortURL](/images/CheckShortURL.PNG)
+
+* SiteDossier: General site information
+![SiteDossier](/images/SiteDossier.PNG)
+
+* Webutation: URL reputation checker
+![Webutation](/images/Webutation.PNG)
+
+* Web Inspector: A scanning tool that also features recently detected malicious websites
+![Web Inspector](/images/Web Inspector.PNG)
+
+* Virus Total: Another web scanning tool
+![Virus Total](/images/Virus Total.PNG)
+
+* Linux JWhois: A domain registration data client
+![Linux JWhois](/images/Linux JWhois.PNG)
+
+* Linux Dig: Domain Name System(DNS) resolver tool
+![Linux Dig](/images/Linux Dig.PNG)
+
+* Indicators of Compromise: provides contextual data about malicious objects
+![Indicators of Compromise](/images/Indicators of Compromise.PNG)
 
 ### Citations
 Much of the information on this blog post is provided by the Network Security powerpoint slides and created by Cedric Cochin.
