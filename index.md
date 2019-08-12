@@ -68,6 +68,25 @@ There are several different types of attacks that can be performed on the browse
 * Cross-site scripting: Exploting a browser's trust in a site to execute malicious scripts.
 * Cross-site request forgery: Exploit the server's trust in the browser to execute malicious code against the browser.
 
+### The Tools We Used!
+For performing our basic attacks and analysis for the labs that we had this week, we were given hands on practice for a couple of pretty neat tools:
+* BurpSuit:
+* WebScarab:
+
+For protecting the users against all this web-based malware, we were shown (but didn't get to use) several other tools with pictures provided from the lecture:
+* Alexa: Used to determine general site prevalence
+* Archive.org: Used to determine site changes over time (doesn't work for short-lived malware content)
+* IPVoid: A blacklisted IP search
+* CheckShortURL: A URL expander
+* SiteDossier: General site information
+* Webutation: URL reputation checker
+* Web Inspector: A scanning tool that also features recently detected malicious websites
+* Virus Total: Another web scanning tool
+* Linux JWhois: A domain registration data client
+* Linux Dig: Domain Name System(DNS) resolver tool
+* Indicators of Compromise: provides contextual data about malicious objects
+
+
 ### Citations
 Much of the information on this blog post is provided by the Network Security powerpoint slides and created by Cedric Cochin.
 
