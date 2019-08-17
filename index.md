@@ -23,7 +23,14 @@ There are several methods used to stop the successful delivery of spam without c
 
 Generally speaking, the technology around combating spam falls into one of two categories: reputation-driven and content-driven. Using a reputation-driven engine follows the idea that of something has been known to be malicious in the past, it probably still is. This applies to the IPs sending the messages, the URLs associated with the messages, and even the message itself. Using a content-driven engine follows the idea that if a message contains something that's been in previous malicious messages, it might also be malicious. This involves analyzing the message for common strings, the usage of regular expressions, analyzing the attributes of the message, and comparing the meta rules of the content.
 
+### The Tools Available!
+There are several tools that can be used to research messages and their malicious nature; however, there were only two we used in the actual exercises: PostgreSQL and The Regex Coach. PostgreSQL allows us to view some database information:
 
+![PostgreSQL](/images/PostgreSQL.PNG)
+
+The Regex Coach is a tool that teaches about regular expressions. 
+
+![Archive](/images/TheRegexCoach.PNG)
 
 ### Citations
 Much of the information on this blog post is provided by the Network Security powerpoint slides presented and created by Eric Peterson.
