@@ -2,6 +2,34 @@
  
 This blog is being done as an ongoing weekly homework assignment for OSU's online CS373 course. It will follow my learning as the course progresses and, hopefully, show my growth throughout the term.
 
+## Week 8 Write-Up: Messaging Security
+Week 8 demonstrated the essence of message security, security involving the protection of users from malicious communications. Specifically, the lessons involved the protection of users from malicious "spam" e-mails and the processes behind discerning between spam e-mails and legitimate e-mails.
+
+### How Do We Classify Messages?
+Messages are classified as either spam or ham. Spam means that a message is without a doubt illegitimate, and ham means that a message appears to be legit. Notice that I said that spam is "without a doubt" illegitimate while ham is "appears" legitimate. This is because having false positives within messaging security is seen as much, much worse than false negatives.
+
+### What is Phishing and Spear-Phishing?
+As we've covered in the previous weeks, phishing is the act of maliciously seeking data from unwilling or unknowing participants. When it comes to message security, phishing is usually performed by through an official looking e-mail that sends the user to an unexpected destination. Spear-Phishing is essentially the same concept on a specific victim rather than a vast number of random users. This is usually done by gaining a considerable amount of personal details about the victim and then pretending to be a trustworthy party that the victim knows.
+
+### How is Spam Delivered?
+Spam messages are delivered in one of two ways: mass sending of messages and snowshoe spamming. With the former method, members of a botnet send as many spam messages to as many different places as possible. This, while effectively sending a large amount of messages, allows companies to simply block the IP addresses sending these messages keeping the user from ever seeing them. The latter method is a much more clever method; instead of simply mass sending data, snowshoe spamming involves spreading the load across all available resources evenly. This leads to less of a spike of activity from any one IP address which makes it much more difficult to detect and block.
+
+### How Do We Stop Spam?
+There are several methods used to stop the successful delivery of spam without causing any false positives:
+* Spamtraps/Honeypots: Both methods of trapping or otherwise collecting information about attacks. Could be a clean e-mail account that isn't used anywhere or an an e-mail account that has been deactivated, among other things.
+* Realtime Blackhole List(RBL): A list of IP addresses whose owners refuse to stop sending spam. This allows the IP addresses to be blocked.
+* Bayesian inference: Determining the probability that a hypothesis (such as "This IP address will send spam") based on the evidence that is available.
+* Fingerprinting/Hashing: The mapping of known information to a much smaller bit string. In a message security context, if information we're looking at matches some malicious fingerprint, there's a good chance it is malicious.
+
+Generally speaking, the technology around combating spam falls into one of two categories: reputation-driven and content-driven. Using a reputation-driven engine follows the idea that of something has been known to be malicious in the past, it probably still is. This applies to the IPs sending the messages, the URLs associated with the messages, and even the message itself. Using a content-driven engine follows the idea that if a message contains something that's been in previous malicious messages, it might also be malicious. This involves analyzing the message for common strings, the usage of regular expressions, analyzing the attributes of the message, and comparing the meta rules of the content.
+
+
+
+### Citations
+Much of the information on this blog post is provided by the Network Security powerpoint slides presented and created by Eric Peterson.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 ## Week 7 Write-Up: Web Security
 Week seven showed off the evil side of computer security so that we, the students, better understand what we're up against. 
 
@@ -120,7 +148,7 @@ For protecting the users against all this web-based malware, we were shown (but 
 ![IndicatorsofCompromise](/images/IndicatorsofCompromise.png)
 
 ### Citations
-Much of the information on this blog post is provided by the Network Security powerpoint slides and created by Cedric Cochin.
+Much of the information on this blog post is provided by the Network Security powerpoint slides presented and created by Cedric Cochin.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
